@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>博客索引</title>
+</head>
+<body>
+<h1>博客索引</h1>
+<ul>
+    <% blogs.forEach(blog => { %>
+        <li>
+            <a href="<%= blog.url %>">
+                <%= blog.title %>
+            </a>
+            <span>
+                <%= blog.date %>
+            </span>
+        </li>
+    <% }) %>
+</ul>
+</body>
+</html>
